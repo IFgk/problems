@@ -14,4 +14,4 @@ def veronica():
 @check50.check(exists)
 def brian():
     """responds to name Brian."""
-    check50.run("python3 hello.p<").stdin("Brian").stdout("Brian").exit()
+    check50.run("python3 hello.py").stdin("Brian").stdout("Brian").exit()
