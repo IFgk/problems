@@ -5,15 +5,3 @@ check50:
 
   submit50:
     files: *check50_files
-
-  checks:
-    brian:
-      - run: python3 hello.py
-        stdin: Brian
-        stdout: hello, Brian
-        exit: 0
-    world:
-      - run: python3 hello.py
-        stdin: world
-        stdout: hello, world
-        exit: 0
