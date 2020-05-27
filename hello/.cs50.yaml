@@ -1,6 +1,21 @@
 check50:
+  files: &check50_files
+    - !exclude "*"
+    - !require hello.py
+
+  submit50:
+    files: *check50_files
+
   checks:
-    hello world:
+    exists:
+      - #
+    brian:
       - run: python3 hello.py
-        stdout: Hello, world!
+        stdin: Brian
+        stdout: hello, Brian
+        exit: 0
+    world:
+      - run: python3 hello.py
+        stdin: world
+        stdout: hello, world
         exit: 0
