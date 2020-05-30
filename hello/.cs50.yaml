@@ -3,5 +3,5 @@ check50:
     - !exclude "*"
     - !require hello.py
 
-  submit50:
-    files: *check50_files
+submit50:
+  files: *check50_files
